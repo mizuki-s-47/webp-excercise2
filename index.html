@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <h1>HTMLを学ぼう</h1>
+  <p>このサイトは日本大学文理学部情報科学科 Webプログラミングの演習課題で作成されたサイトです。</p>
+  <p>ここではいくつかのhtml要素について紹介します。</p>
+
+  <div class="index">
+    <p>目次</p>
+    <ol>
+      <li><a href="#ruby">ruby</a></li>
+      <li><a href="#img">img</a></li>
+      <li><a href="#ul・ol">ul・ol</a></li>
+    </ol>
+  </div>
+
+  <h2 id="ruby">ruby</h2>
+  <p>rubyタグは文字に振り仮名を振るときに使用するタグです。</p>
+  <p>&ltruby&gt&lt/ruby&gtの中に振り仮名を振りたい文字を記述し、振り仮名を&ltrt&gt&lt/rt&gtの中に記述することで振り仮名を振ることが出来ます。</p>
+
+  <h3>例</h3>
+  <div class="sample">
+    <ul>
+      <li>ソースコード</li>
+      <pre>
+        <code>&ltruby&gt薔薇&ltrt&gtばら&lt/rt&gt&lt/ruby&gt</code>
+        <code>&ltruby&gt虎&ltrt&gtとら&lt/rt&gt&lt/ruby&gtの&ltruby&gt威&ltrt&gtい&lt/rt&gt&lt/ruby&gtを&ltruby&gt借&ltrt&gtか&lt/rt&gt&lt/ruby&gtる&ltruby&gt狐&ltrt&gtきつね&lt/rt&gt&lt/ruby&gt</code>
+      </pre>
+      <li>実行結果</li>
+      <p><ruby>薔薇<rt>ばら</rt></ruby></p>
+      <p><ruby>虎<rt>とら</rt></ruby>の<ruby>威<rt>い</rt></ruby>を<ruby>借<rt>か</rt></ruby>る<ruby>狐<rt>きつね</rt></ruby></p>
+
+    </ul>
+
+  </div>
+
+
+  <h2 id="img">img</h2>
+  <p>imgタグは画像を挿入するときに使用するタグです。src属性で表示する画像を指定し、alt属性で画像が表示されなかったときに表示するテキストを指定することができます。</p>
+  <p>他にも様々な属性があり、画像のサイズを変えるwidth属性・height属性、画像の上にカーソルをのせた時に表示するテキストを指定するtitle属性などがあります。</p>
+
+  <h3>例</h3>
+  <div class="sample">
+    <ul>
+      <li>ソースコード</li>
+      <pre>
+        <code>
+          &ltimg src="images/icon1.png" alt="My icon1" width="150" height="150"&gt
+          
+          &ltimg src="images/icon777.png" alt="My icon2" width="150" height="150" title="虹色に光るアイコン"&gt
+        </code>
+      </pre>
+      <li>実行結果</li>
+      <img src="images/icon1.png" alt="My icon1" width="150" height="150">
+      <img src="images/icon777.png" alt="My icon2" width="150" height="150" title="虹色に光るアイコン">
+    </ul>
+  </div>
+
+
+  <h2 id="ul・ol">ul・ol</h2>
+  <p>ulタグ・olタグはリストを表示するときに使用するタグです。順序がない場合はulタグ、順序がある場合はolタグを使用します。</p>
+  <p>どちらもtype属性を使うことでテキストの前の記号や番号を指定することができます。</p>
+  <h3>例(ul)</h3>
+  <div class="sample">
+    <ul>
+      <li>ソースコード</li>
+      <pre>
+        <code>
+          &ltul&gt
+            &ltli&gtチョコレート&lt/li&gt
+            &ltli&gtポテトチップス&lt/li&gt
+          &lt/ul&gt
+
+          &ltul type="square"&gt
+            &ltli&gtキャンディー&lt/li&gt
+            &ltli&gtマリトッツォ&lt/li&gt
+          &lt/ul&gt
+        </code>
+      </pre>
+
+      <li>実行結果</li>
+      <ul>
+        <li>チョコレート</li>
+        <li>ポテトチップス</li>
+      </ul>
+      <ul type="square">
+        <li>キャンディー</li>
+        <li>マリトッツォ</li>
+      </ul>
+    </ul>
+  </div>
+
+
+  <h3>例(ol)</h3>
+  <div class="sample">
+    <ul>
+      <li>ソースコード</li>
+      <pre>
+        <code>
+          &ltol type="1"&gt
+            &ltli&gtオムライス&lt/li&gt
+            &ltli&gtカレーライス&lt/li&gt
+          &lt/ol&gt
+  
+          &ltol type="A"&gt
+            &ltli&gtモンブラン&lt/li&gt
+            &ltli&gtフルーツタルト&lt/li&gt
+          &lt/ol&gt
+        </code>
+      </pre>
+
+      <li>実行結果</li>
+      <ol type="1">
+        <li>オムライス</li>
+        <li>カレーライス</li>
+      </ol>
+      <ol type="A">
+        <li>モンブラン</li>
+        <li>フルーツタルト</li>
+      </ol>
+    </ul>
+
+  </div>
+
+  <footer>
+    <p>5420052　須賀美月</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
